@@ -1,11 +1,11 @@
 import PurpleButton from "../buttons/purple-button";
 
-function Header() {
+function Navbar() {
     return (
         <header className="bg-slate-900 shadow">
             <nav className="mx-60 p-8 flex justify-between items-center font-bold text-xl text-violet-300/80">
                 <a href="/" className="font-bold text-5xl text-violet-200">
-                    Augustin Muyl
+                    Name
                 </a>
                 <a href="/" className="hover:text-white">
                     About
@@ -24,4 +24,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Navbar;
