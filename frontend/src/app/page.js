@@ -1,11 +1,16 @@
 import Profile from "@/components/profile/profile";
 import Experience from "@/components/experience/experience";
+import About from "@/components/about/about";
+import HomeLayout from "@/components/layout/layout";
 
-export default function Home() {
+export default function Page() {
     return (
-        <div className="flex flex-col justify-center items-center gap-8">
-            <Profile></Profile>
-            <Experience></Experience>
-        </div>
+        <>
+            <HomeLayout />
+            <div className="flex flex-col justify-center items-center gap-16 mt-16">
+                <About />
+                <Experience />
+            </div>
+        </>
     );
 }
