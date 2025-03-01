@@ -1,15 +1,15 @@
 import Navbar from "../navbar/navbar";
-import Home from "../home/home";
+import Hero from "../hero/hero";
 
 function HomeLayout() {
     return (
         <div className="flex flex-col h-screen w-full">
             <div>
-                <Navbar></Navbar>
+                <Navbar />
             </div>
 
             <div className="flex-1">
-                <Home></Home>
+                <Hero />
             </div>
         </div>
     );

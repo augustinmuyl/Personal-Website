@@ -1,7 +1,7 @@
 function Navbar() {
     return (
         <header className="bg-slate-900 shadow w-full">
-            <nav className="mx-60 p-8 flex justify-between items-center font-bold text-xl text-violet-300/80">
+            <nav className="mx-60 p-6 flex justify-between items-center font-bold text-xl text-violet-300/80">
                 <a href="/" className="font-bold text-3xl text-violet-200">
                     Augustin Muyl
                 </a>
