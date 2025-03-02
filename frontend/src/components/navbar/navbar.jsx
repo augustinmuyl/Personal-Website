@@ -32,7 +32,12 @@ function Navbar() {
                 >
                     Projects
                 </button>
-                <a href="/" className="hover:text-white">
+                <a
+                    href="https://linkedin.com/in/augustinmuyl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white"
+                >
                     Contact
                 </a>
             </nav>

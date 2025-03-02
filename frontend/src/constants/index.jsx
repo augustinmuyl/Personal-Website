@@ -25,9 +25,7 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={bostonhacks_2} alt="BostonHacks" />,
         description: [
-            "Developing a web app using NextJS, Tailwind, ExpressJS, and Prisma ORM to boost participant acquisition and deliver updates to partners.",
-            "Building an archival website to display over 10 web apps from previous hackathons, giving exposure to previous winners.",
-            "Designing and implementing a candidate ranking system to parse through 1,000+ applicants, streamlining the admissions process by 50%.",
+            "Developing a web application using Next.JS and Tailwind CSS as an onboarding project.",
         ],
     },
     {
@@ -37,7 +35,6 @@ const experiences = [
         icon: <Image src={bualpha} alt="BUAplha/BUFC" />,
         description: [
             "Participating in weekly workshops surrounding machine learning, programming, math, statistics, and finance.",
-            "Developing APIs, frontend, and deploying various projects such as stock price predictions using Monte Carlo methods to gain practical experience of the topics learned.",
         ],
     },
 ];

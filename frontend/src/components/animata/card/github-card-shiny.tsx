@@ -59,14 +59,14 @@ export default function GithubCardShiny({ className }: { className?: string }) {
                     />
                     <div className="text-lg/9 flex flex-col gap-4">
                         <p>
-                            I'm a Maths and Computer Science student at Boston
+                            I'm a Mathematics and Computer Science student at Boston
                             University with a background in full-stack
                             development, especially using React (Next.JS),
                             Tailwind CSS, Flask, MongoDB, and PostgreSQL.
                         </p>
                         <p>
-                            I am passionate about Web Development and ABC. Lorem
-                            ipsum dolores.
+                            I am passionate about web development and its
+                            intersection with social impact.
                         </p>
                     </div>
                 </div>
