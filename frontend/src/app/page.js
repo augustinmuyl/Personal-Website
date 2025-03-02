@@ -8,11 +8,9 @@ export default function Page() {
     return (
         <>
             <HomeLayout />
-            <div className="flex flex-col justify-center items-center gap-16 mt-16">
-                <About />
-                <Experience />
-                <Projects/>
-            </div>
+            <About />
+            <Experience />
+            <Projects />
         </>
     );
 }

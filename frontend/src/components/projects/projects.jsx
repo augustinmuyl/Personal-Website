@@ -4,16 +4,15 @@ import {
     outreachoutlet,
     outreachoutlet_screenshot,
 } from "../../../public/assets";
-import GithubCardShiny from "../animata/card/github-card-shiny";
 import GithubCardSkew from "../animata/card/github-card-skew";
 
 function Projects() {
     return (
         <div
             id="projects"
-            className="flex flex-col gap-12 justify-center items-center pt-48 pb-96"
+            className="flex flex-col justify-center items-center pt-36 pb-36"
         >
-            <h1 className={`${styles.sectionHeadText}`}>Projects</h1>
+            <h1 className={`${styles.sectionHeadText} pb-16`}>Projects</h1>
             <div className="flex">
                 <a
                     href="https://outreachoutlet.org/"

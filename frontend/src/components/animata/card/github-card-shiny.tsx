@@ -9,6 +9,7 @@ import { cn } from "../../../lib/utils";
 import {
     outreachoutlet,
     outreachoutlet_screenshot,
+    pfp_1,
 } from "../../../../public/assets";
 import { styles } from "../../../app/styles.js";
 
@@ -36,7 +37,7 @@ export default function GithubCardShiny({ className }: { className?: string }) {
         <div
             ref={containerRef}
             className={cn(
-                "group relative w-96 min-w-fit max-w-full overflow-hidden rounded-md border border-border bg-zinc-700 text-zinc-200 shadow-lg",
+                "group relative w-1/2 max-w-full overflow-hidden rounded-3xl border text-zinc-200 shadow-lg",
                 className
             )}
         >
@@ -49,7 +50,27 @@ export default function GithubCardShiny({ className }: { className?: string }) {
                 }}
             />
 
-            <div className={styles.sectionBox}></div>
+            <div className={styles.sectionBox}>
+                <div className="flex justify-center gap-12">
+                    <Image
+                        src={pfp_1}
+                        alt="PFP"
+                        className="rounded-full size-64"
+                    />
+                    <div className="text-lg/9 flex flex-col gap-4">
+                        <p>
+                            I'm a Maths and Computer Science student at Boston
+                            University with a background in full-stack
+                            development, especially using React (Next.JS),
+                            Tailwind CSS, Flask, MongoDB, and PostgreSQL.
+                        </p>
+                        <p>
+                            I am passionate about Web Development and ABC. Lorem
+                            ipsum dolores.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

@@ -106,12 +106,17 @@ export default function GithubCardSkew({ className }: { className?: string }) {
             }}
         >
             <div className="flex flex-col">
-                <Image src={outreachoutlet_screenshot} alt="OutreachOutlet" className="rounded-xl mb-6"/>
+                <Image
+                    src={outreachoutlet_screenshot}
+                    alt="OutreachOutlet"
+                    className="rounded-xl mb-6"
+                />
                 <h1 className="text-2xl font-bold mb-2">OutreachOutlet</h1>
-                <p className="text-base/7">Web app that matches users with available volunteering opportunities aligned with their interests</p>
+                <p className="text-base/7">
+                    Web app that matches users with available volunteering
+                    opportunities aligned with their interests
+                </p>
             </div>
-            
-
         </div>
     );
 }
