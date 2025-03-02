@@ -7,9 +7,9 @@ function About() {
         <div
             id="about"
             className="flex flex-col gap-8 justify-center items-center pt-32"
-        >
-            <div className={`${styles.sectionBox} flex-col w-1/2 gap-9`}>
-                <h1 className={styles.sectionHeadText}>About Me</h1>
+        ><h1 className={styles.sectionHeadText}>About Me</h1>
+            <div className={`${styles.sectionBox} flex-col w-1/2 gap-9 border`}>
+                
                 <div className="flex justify-center gap-12">
                     <Image
                         src={pfp_1}

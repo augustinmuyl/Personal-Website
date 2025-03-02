@@ -7,6 +7,7 @@ import bufc from "./bufc.jpeg";
 import pfp_1 from "./pfp_1.jpeg";
 import pfp_2 from "./pfp_2.jpeg";
 import outreachoutlet from "./outreachoutlet.png";
+import outreachoutlet_screenshot from "./outreachoutlet_screenshot.png";
 
 export {
     iperuranium,
@@ -18,4 +19,5 @@ export {
     pfp_1,
     pfp_2,
     outreachoutlet,
+    outreachoutlet_screenshot,
 };
