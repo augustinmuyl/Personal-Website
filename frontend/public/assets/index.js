@@ -4,6 +4,8 @@ import bostonhacks from "./bostonhacks.png";
 import bostonhacks_2 from "./bostonhacks_2.png";
 import bualpha from "./bualpha.png";
 import bufc from "./bufc.jpeg";
+import pfp_1 from "./pfp_1.jpeg";
+import pfp_2 from "./pfp_2.jpeg";
 
 export {
     iperuranium,
@@ -12,4 +14,6 @@ export {
     bostonhacks_2,
     bualpha,
     bufc,
+    pfp_1,
+    pfp_2,
 };
