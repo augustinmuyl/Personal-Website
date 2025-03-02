@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <>
             <HomeLayout />
-            <div className="flex flex-col justify-center items-center gap-16 mt-16">
+            <div>
                 <About />
                 <Experience />
             </div>

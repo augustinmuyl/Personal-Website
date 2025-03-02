@@ -1,16 +1,31 @@
+"use client";
+
 function Navbar() {
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
-        <header className="bg-slate-900 shadow w-full">
+        <header className="bg-slate-900 shadow-2xl w-full fixed top-0 left-0 z-50 border-b">
             <nav className="mx-60 p-6 flex justify-between items-center font-bold text-xl text-violet-300/80">
                 <a href="/" className="font-bold text-3xl text-violet-200">
                     Augustin Muyl
                 </a>
-                <a href="/" className="hover:text-white">
+                <button
+                    onClick={() => scrollToSection("about")}
+                    className="hover:text-white"
+                >
                     About
-                </a>
-                <a href="/" className="hover:text-white">
+                </button>
+                <button
+                    onClick={() => scrollToSection("experience")}
+                    className="hover:text-white"
+                >
                     Experience
-                </a>
+                </button>
                 <a href="/" className="hover:text-white">
                     Projects
                 </a>
