@@ -40,7 +40,7 @@ function ExperienceCard({ experience, index }) {
                 </p>
             </div>
 
-            <ul className="list-disc ml-5 text-white mt-4 space-y-2">
+            <ul className="list-disc ml-5 text-white text-base/7 mt-4 space-y-2">
                 {experience.description.map((description, index) => (
                     <li key={index}>{description}</li>
                 ))}
@@ -52,7 +52,12 @@ function ExperienceCard({ experience, index }) {
 function Experience() {
     return (
         <>
-            <h1 className={styles.sectionHeadText}>Experience</h1>
+            <h1
+                id="experience"
+                className={`${styles.sectionHeadText} flex justify-center items-center pt-32 pb-16`}
+            >
+                Experience
+            </h1>
             <VerticalTimeline>
                 {experiences.map((experience, index) => (
                     <ExperienceCard

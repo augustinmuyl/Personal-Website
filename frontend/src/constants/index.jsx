@@ -6,7 +6,7 @@ import {
     bostonhacks_2,
     bualpha,
     bufc,
-} from "../assets";
+} from "../../public/assets";
 
 const experiences = [
     {
@@ -15,8 +15,8 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={iperuranium_2} alt="Iperuranium" />,
         description: [
-            "Working with Next.JS, Tailwind CSS, and MongoDB to create a web application for the company.",
-            "Implemented A, B, C.",
+            "Engineering a web application for the company using Next.JS, Tailwind CSS, Go, and MongoDB.",
+            "Collaborating within a group of 4 people, bridging the design team’s vision with the technical team’s development.",
         ],
     },
     {
@@ -25,8 +25,9 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={bostonhacks_2} alt="BostonHacks" />,
         description: [
-            "Developing a web app with NextJS, Tailwind, ExpressJS, and Prisma ORM for next year's hackathon alongside an archival website to store all previous web apps.",
-            "Designing and implementing a candidate ranking system to parse through 1,000+ applicants.",
+            "Developing a web app using NextJS, Tailwind, ExpressJS, and Prisma ORM to boost participant acquisition and deliver updates to partners.",
+            "Building an archival website to display over 10 web apps from previous hackathons, giving exposure to previous winners.",
+            "Designing and implementing a candidate ranking system to parse through 1,000+ applicants, streamlining the admissions process by 50%.",
         ],
     },
     {
@@ -35,8 +36,8 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={bualpha} alt="BUAplha/BUFC" />,
         description: [
-            "Participating in weekly workshops on a variety of topics surrounding machine learning, programming, math, statistics, finance, etc.",
-            "Developing APIs, frontend, and deploying various projects such as stock price predictions using Monte Carlo methods.",
+            "Participating in weekly workshops surrounding machine learning, programming, math, statistics, and finance.",
+            "Developing APIs, frontend, and deploying various projects such as stock price predictions using Monte Carlo methods to gain practical experience of the topics learned.",
         ],
     },
 ];
