@@ -6,8 +6,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "@/app/styles";
-import { experiences } from "@/constants";
+import { styles } from "../../app/styles";
+import { experiences } from "../../constants";
 
 function ExperienceCard({ experience, index }) {
     return (
@@ -54,7 +54,7 @@ function Experience() {
         <>
             <h1
                 id="experience"
-                className={`${styles.sectionHeadText} flex justify-center items-center pt-32 pb-16`}
+                className={`${styles.sectionHeadText} flex justify-center items-center pt-48 pb-16`}
             >
                 Experience
             </h1>

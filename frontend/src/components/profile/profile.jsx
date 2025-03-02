@@ -1,4 +1,4 @@
-import { styles } from "@/app/styles";
+import { styles } from "../../app/styles";
 
 function Profile() {
     return (

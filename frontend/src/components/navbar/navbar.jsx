@@ -26,9 +26,12 @@ function Navbar() {
                 >
                     Experience
                 </button>
-                <a href="/" className="hover:text-white">
+                <button
+                    onClick={() => scrollToSection("projects")}
+                    className="hover:text-white"
+                >
                     Projects
-                </a>
+                </button>
                 <a href="/" className="hover:text-white">
                     Contact
                 </a>

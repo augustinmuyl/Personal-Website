@@ -45,14 +45,22 @@ function Hero() {
                 <h1 className="font-bold text-6xl">Augustin Muyl</h1>
                 <p className="text-3xl">Boston University Student</p>
                 <ul className="flex gap-5 mt-4">
-                    <a href="https://linkedin.com/in/augustinmuyl">
+                    <a
+                        href="https://linkedin.com/in/augustinmuyl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                             alt="LinkedIn"
                             className="size-12 hover:scale-125 transition-all duration-300"
                         />
                     </a>
-                    <a href="https://github.com/augustinmuyl">
+                    <a
+                        href="https://github.com/augustinmuyl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img
                             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                             alt="GitHub"
