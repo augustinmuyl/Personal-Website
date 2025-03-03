@@ -15,7 +15,7 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={iperuranium_2} alt="Iperuranium" />,
         description: [
-            "Engineering a web application for the company using Next.JS, Tailwind CSS, Go, and MongoDB.",
+            "Engineering a web application for the company using Next.js, Tailwind CSS, Go, and MongoDB.",
             "Collaborating within a group of 4 people, bridging the design team’s vision with the technical team’s development.",
         ],
     },
@@ -25,7 +25,7 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={bostonhacks_2} alt="BostonHacks" />,
         description: [
-            "Developing a web application using Next.JS and Tailwind CSS as an onboarding project.",
+            "Developing a web application using Next.js and Tailwind CSS as an onboarding project.",
         ],
     },
     {

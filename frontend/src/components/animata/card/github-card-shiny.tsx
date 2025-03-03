@@ -61,7 +61,7 @@ export default function GithubCardShiny({ className }: { className?: string }) {
                         <p>
                             I'm a Mathematics and Computer Science student at Boston
                             University with a background in full-stack
-                            development, especially using React (Next.JS),
+                            development, especially using React (Next.js),
                             Tailwind CSS, Flask, MongoDB, and PostgreSQL.
                         </p>
                         <p>
