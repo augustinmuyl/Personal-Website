@@ -34,10 +34,7 @@ function ExperienceCard({ experience, index }) {
                 <h1 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold">
                     {experience.title}
                 </h1>
-                <p
-                    className="text-xl text-violet-200/50 font-semibold"
-                    style={{ margin: 0 }}
-                >
+                <p className="text-violet-200/50" style={{ margin: 0 }}>
                     {experience.company}
                 </p>
             </div>
