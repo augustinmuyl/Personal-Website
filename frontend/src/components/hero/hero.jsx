@@ -41,11 +41,15 @@ function Hero() {
             className="w-full h-full flex justify-center lg:justify-start items-center"
         >
             <div className="flex flex-col items-center justify-center text-center lg:items-start lg:ml-56 gap-1">
-                <p className="text-xl lg:text-3xl">Hello, I am</p>
-                <h1 className="font-bold text-3xl lg:text-6xl">
+                <p className="text-lg sm:text-xl md:text-2xl xl:text-3xl">
+                    Hello, I am
+                </p>
+                <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
                     Augustin Muyl
                 </h1>
-                <p className="text-xl lg:text-3xl">Boston University Student</p>
+                <p className="text-lg sm:text-xl md:text-2xl xl:text-3xl">
+                    Boston University Student
+                </p>
                 <ul className="flex gap-5 mt-4">
                     <a
                         href="https://linkedin.com/in/augustinmuyl"
@@ -55,7 +59,7 @@ function Hero() {
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                             alt="LinkedIn"
-                            className="size-12 hover:scale-125 transition-all duration-300"
+                            className="size-6 sm:size-7 md:size-8 lg:size-10 xl:size-12 hover:scale-125 transition-all duration-300"
                         />
                     </a>
                     <a
@@ -66,7 +70,7 @@ function Hero() {
                         <img
                             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                             alt="GitHub"
-                            className="invert size-12 hover:scale-125 transition-all duration-300"
+                            className="invert size-6 sm:size-7 md:size-8 lg:size-10 xl:size-12 hover:scale-125 transition-all duration-300"
                         />
                     </a>
                 </ul>
