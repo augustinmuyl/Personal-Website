@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
                     content="width=device-width, initial-scale=1"
                 />
             </head>
-            <body>{children}</body>
+            <body className="bg-slate-950">{children}</body>
         </html>
     );
 }
