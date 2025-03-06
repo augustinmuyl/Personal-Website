@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../../app/styles";
 import { experiences } from "../../constants";
+import { motion } from "motion/react";
 
 function ExperienceCard({ experience, index }) {
     return (
@@ -51,12 +52,16 @@ function ExperienceCard({ experience, index }) {
 function Experience() {
     return (
         <>
-            <h1
+            <motion.h1
                 id="experience"
                 className={`${styles.sectionHeadText} flex justify-center items-center pt-36 pb-8 sm:pb-10 md:pb-12 xl:pb-16`}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
             >
                 Experience
-            </h1>
+            </motion.h1>
             <VerticalTimeline>
                 {experiences.map((experience, index) => (
                     <ExperienceCard
