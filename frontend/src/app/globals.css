@@ -4,13 +4,10 @@
 @tailwind utilities;
 
 :root {
-    --background: oklch(0.129 0.042 264.695);
     --foreground: oklch(0.943 0.029 294.588);
 }
 
 body {
     color: var(--foreground);
-    background: var(--background);
-    /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: Krub;
 }

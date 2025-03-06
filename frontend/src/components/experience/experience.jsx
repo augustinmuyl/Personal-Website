@@ -31,7 +31,9 @@ function ExperienceCard({ experience, index }) {
             iconClassName="bg-white"
         >
             <div>
-                <h1 className="text-2xl font-bold">{experience.title}</h1>
+                <h1 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold">
+                    {experience.title}
+                </h1>
                 <p
                     className="text-xl text-violet-200/50 font-semibold"
                     style={{ margin: 0 }}
@@ -40,7 +42,7 @@ function ExperienceCard({ experience, index }) {
                 </p>
             </div>
 
-            <ul className="list-disc ml-5 tracking-wider text-white text-base/7 mt-4 space-y-2">
+            <ul className="list-disc ml-5 tracking-wider text-white text-xs/5 sm:text-sm/6 md:text-base/7 xl:text-lg/7 mt-4 space-y-2">
                 {experience.description.map((description, index) => (
                     <li key={index}>{description}</li>
                 ))}

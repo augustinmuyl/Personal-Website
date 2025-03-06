@@ -7,7 +7,7 @@ import Projects from "../components/projects/projects";
 
 export default function Page() {
     return (
-        <div>
+        <div className="bg-slate-950">
             <div className="h-screen">
                 <Navbar></Navbar>
                 <Hero></Hero>
