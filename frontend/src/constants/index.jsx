@@ -15,8 +15,8 @@ const experiences = [
         date: "February 2025 - Present",
         icon: <Image src={iperuranium_2} alt="Iperuranium" />,
         description: [
-            "Engineering a web application for the company using Next.js, Tailwind CSS, Go, and MongoDB.",
-            "Collaborating within a group of 4 people, bridging the design team’s vision with the technical team’s development.",
+            "Engineering a scalable, full‐stack web application from the ground up using Next.js, Tailwind CSS, Go, and MongoDB; enhancing operational efficiency and user experience.",
+            "Collaborating in a cross‐functional team of 8 to transform Figma prototypes into robust, production-ready code, ensuring seamless integration between design and development.",
         ],
     },
     {
