@@ -16,11 +16,11 @@ function ExperienceCard({ experience, index }) {
                 background: "rgb(15 23 42 / var(--tw-bg-opacity, 1))",
                 borderRadius: "1.5rem",
                 padding: "2rem",
-                width: 425,
+                maxWidth: 425,
             }}
             contentArrowStyle={{ borderRight: "7px solid #232631" }}
             date={experience.date}
-            dateClassName="mx-28"
+            dateClassName="min-[1170px]:mx-28"
             icon={
                 <div className="flex justify-center items-center w-full h-full">
                     <em className="w-[55%] object-contain">
@@ -40,7 +40,7 @@ function ExperienceCard({ experience, index }) {
                 </p>
             </div>
 
-            <ul className="list-disc ml-5 text-white text-base/7 mt-4 space-y-2">
+            <ul className="list-disc ml-5 tracking-wider text-white text-base/7 mt-4 space-y-2">
                 {experience.description.map((description, index) => (
                     <li key={index}>{description}</li>
                 ))}

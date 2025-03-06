@@ -76,7 +76,7 @@ export default function GithubCardSkew({ className }: { className?: string }) {
         <div
             ref={containerRef}
             className={cn(
-                "bg-slate-900 rounded-3xl p-8 flex justify-center items-center w-96 transform-gpu flex-col gap-4 border text-zinc-200 shadow-lg transition-transform ease-linear will-change-transform",
+                "bg-slate-900 rounded-3xl p-8 flex justify-center items-center max-w-96 transform-gpu flex-col gap-4 border text-zinc-200 shadow-lg transition-transform ease-linear will-change-transform",
                 className
             )}
             style={{

@@ -38,12 +38,14 @@ function Hero() {
     return (
         <div
             ref={vantaRef}
-            className="w-full h-full flex justify-start items-center"
+            className="w-full h-full flex justify-center lg:justify-start items-center"
         >
-            <ul className="flex flex-col items-start ml-56 gap-1">
-                <p className="text-3xl">Hello, I am</p>
-                <h1 className="font-bold text-6xl">Augustin Muyl</h1>
-                <p className="text-3xl">Boston University Student</p>
+            <div className="flex flex-col items-center justify-center text-center lg:items-start lg:ml-56 gap-1">
+                <p className="text-xl lg:text-3xl">Hello, I am</p>
+                <h1 className="font-bold text-3xl lg:text-6xl">
+                    Augustin Muyl
+                </h1>
+                <p className="text-xl lg:text-3xl">Boston University Student</p>
                 <ul className="flex gap-5 mt-4">
                     <a
                         href="https://linkedin.com/in/augustinmuyl"
@@ -68,7 +70,7 @@ function Hero() {
                         />
                     </a>
                 </ul>
-            </ul>
+            </div>
         </div>
     );
 }
