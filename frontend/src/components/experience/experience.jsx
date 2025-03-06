@@ -54,7 +54,7 @@ function Experience() {
         <>
             <h1
                 id="experience"
-                className={`${styles.sectionHeadText} flex justify-center items-center pt-36 pb-16`}
+                className={`${styles.sectionHeadText} flex justify-center items-center pt-36 pb-8 sm:pb-10 md:pb-12 xl:pb-16`}
             >
                 Experience
             </h1>

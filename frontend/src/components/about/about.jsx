@@ -7,7 +7,7 @@ function About() {
     return (
         <div
             id="about"
-            className="flex flex-col gap-16 justify-center items-center pt-36"
+            className="flex flex-col gap-8 sm:gap-10 md:gap-12 xl:gap-16 justify-center items-center pt-36"
         >
             <h1 className={styles.sectionHeadText}>About Me</h1>
             <GithubCardShiny></GithubCardShiny>

@@ -10,9 +10,9 @@ function Projects() {
     return (
         <div
             id="projects"
-            className="flex flex-col justify-center items-center pt-36 pb-36"
+            className="flex flex-col justify-center gap-8 sm:gap-10 md:gap-12 xl:gap-16 items-center pt-36 pb-36"
         >
-            <h1 className={`${styles.sectionHeadText} pb-16`}>Projects</h1>
+            <h1 className={`${styles.sectionHeadText}`}>Projects</h1>
             <div className="flex">
                 <a
                     href="https://outreachoutlet.org/"
