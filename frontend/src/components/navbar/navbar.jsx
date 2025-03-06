@@ -113,7 +113,7 @@ function Navbar() {
                 </button>
                 <div
                     ref={listRef}
-                    className="hidden sm:hidden absolute z-50 bg-slate-900 rounded-2xl p-6 right-4 top-14 text-sm font-semibold flex flex-col items-center gap-2"
+                    className="hidden sm:hidden absolute z-50 bg-slate-900 rounded-2xl p-6 right-4 top-14 text-sm font-semibold flex flex-col items-center gap-2 border"
                 >
                     <button
                         onClick={() => scrollToSection("about")}
