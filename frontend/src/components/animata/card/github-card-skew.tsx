@@ -111,8 +111,10 @@ export default function GithubCardSkew({ className }: { className?: string }) {
                     alt="OutreachOutlet"
                     className="rounded-xl mb-6"
                 />
-                <h1 className="text-2xl font-bold mb-2">OutreachOutlet</h1>
-                <p className="text-base/7">
+                <h1 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold mb-0 sm:mb-[2px] md:mb-1 xl:mb-2">
+                    OutreachOutlet
+                </h1>
+                <p className="text-xs/5 sm:text-sm/6 md:text-base/7 xl:text-lg/7 tracking-wider">
                     Web app that matches users with available volunteering
                     opportunities aligned with their interests
                 </p>
