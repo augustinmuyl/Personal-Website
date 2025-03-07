@@ -191,15 +191,25 @@ function Hero() {
                         whileHover={{ scale: 1.1 }}
                         onHoverStart={() => setIsHovering(true)}
                         onHoverEnd={() => setIsHovering(false)}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            opacity: { delay: 1, duration: 1 },
+                            scale: { duration: 0.2 },
+                        }}
                     >
                         <motion.div
                             className="border rounded-full w-3 h-3 bg-violet-200"
-                            animate={isHovering ? {} : { y: [0, 24, 0] }}
-                            transition={{
-                                duration: 1.5,
-                                repeat: Infinity,
-                                repeatType: "loop",
-                            }}
+                            animate={isHovering ? { y: 12 } : { y: [0, 24, 0] }}
+                            transition={
+                                isHovering
+                                    ? { duration: 0.2 }
+                                    : {
+                                          duration: 1.5,
+                                          repeat: Infinity,
+                                          repeatType: "loop",
+                                      }
+                            }
                         />
                     </motion.div>
                 </a>

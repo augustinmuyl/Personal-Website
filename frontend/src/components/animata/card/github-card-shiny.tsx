@@ -50,7 +50,7 @@ export default function GithubCardShiny({ className }: { className?: string }) {
                 }}
             />
 
-            <div className={styles.sectionBox}>
+            <div className={`${styles.sectionBox}`}>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
                     <Image
                         src={pfp_1}
