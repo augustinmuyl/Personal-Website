@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import * as THREE from "three";
 if (typeof window !== "undefined") {
@@ -9,6 +9,7 @@ if (typeof window !== "undefined") {
 
 function Hero() {
     const vantaRef = useRef(null);
+    const [isHovering, setIsHovering] = useState(false);
 
     useEffect(() => {
         let vantaEffect;
@@ -183,6 +184,26 @@ function Hero() {
                     </a>
                 </motion.ul>
             </motion.div>
+            <div className="absolute bottom-16 z-40 w-full flex justify-center items-center">
+                <a href="#about">
+                    <motion.div
+                        className="hidden border-4 border-violet-200 p-2 w-9 h-16 rounded-3xl md:flex justify-center items-start"
+                        whileHover={{ scale: 1.1 }}
+                        onHoverStart={() => setIsHovering(true)}
+                        onHoverEnd={() => setIsHovering(false)}
+                    >
+                        <motion.div
+                            className="border rounded-full w-3 h-3 bg-violet-200"
+                            animate={isHovering ? {} : { y: [0, 24, 0] }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                            }}
+                        />
+                    </motion.div>
+                </a>
+            </div>
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-slate-950" />
         </div>
     );
