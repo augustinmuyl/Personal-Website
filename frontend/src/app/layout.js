@@ -2,7 +2,7 @@ import "./globals.css";
 
 export default function RootLayout({ children }) {
     return (
-        <html>
+        <html className="scroll-smooth">
             <head>
                 <meta
                     name="viewport"

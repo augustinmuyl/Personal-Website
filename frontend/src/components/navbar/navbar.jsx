@@ -33,6 +33,7 @@ function Navbar() {
 
     return (
         <header className="fixed bg-slate-900 shadow-2xl w-full z-50 border-b p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6">
+            {/* Regular Navbar */}
             <nav className="mx-5 sm:mx-16 md:mx-30 lg:mx-40 xl:mx-60 flex justify-between items-center text-violet-300/80 font-bold">
                 <a
                     href="/"
@@ -40,27 +41,27 @@ function Navbar() {
                 >
                     Augustin Muyl
                 </a>
-                <button
-                    onClick={() => scrollToSection("about")}
+                <a
+                    href="#about"
                     className="hover:text-white
                     hidden sm:block text-sm md:text-base lg:text-lg xl:text-xl"
                 >
                     About
-                </button>
-                <button
-                    onClick={() => scrollToSection("experience")}
+                </a>
+                <a
+                    href="#experience"
                     className="hover:text-white
                     hidden sm:block text-sm md:text-base lg:text-lg xl:text-xl"
                 >
                     Experience
-                </button>
-                <button
-                    onClick={() => scrollToSection("projects")}
+                </a>
+                <a
+                    href="#projects"
                     className="hover:text-white
                     hidden sm:block text-sm md:text-base lg:text-lg xl:text-xl"
                 >
                     Projects
-                </button>
+                </a>
                 <a
                     href="https://linkedin.com/in/augustinmuyl"
                     target="_blank"
@@ -71,6 +72,7 @@ function Navbar() {
                     Contact
                 </a>
 
+                {/* Mobile Navbar */}
                 <button
                     ref={buttonRef}
                     className="sm:hidden size-5 mt-[2px] mr-[-10px] hover:text-white"
