@@ -117,24 +117,15 @@ function Navbar() {
                     ref={listRef}
                     className="hidden sm:hidden absolute z-50 bg-slate-900 rounded-2xl p-6 right-4 top-14 text-sm font-semibold flex flex-col items-center gap-2 border"
                 >
-                    <button
-                        onClick={() => scrollToSection("about")}
-                        className="hover:text-white"
-                    >
+                    <a href="#about" className="hover:text-white">
                         About
-                    </button>
-                    <button
-                        onClick={() => scrollToSection("experience")}
-                        className="hover:text-white"
-                    >
+                    </a>
+                    <a href="#experience" className="hover:text-white">
                         Experience
-                    </button>
-                    <button
-                        onClick={() => scrollToSection("projects")}
-                        className="hover:text-white"
-                    >
+                    </a>
+                    <a href="#projects" className="hover:text-white">
                         Projects
-                    </button>
+                    </a>
                     <a
                         href="https://linkedin.com/in/augustinmuyl"
                         target="_blank"
