@@ -8,7 +8,8 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../../app/styles";
 import { experiences } from "../../constants";
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
+import { useRef, useState, useEffect } from "react";
 
 function ExperienceCard({ experience, index }) {
     return (
@@ -50,15 +51,36 @@ function ExperienceCard({ experience, index }) {
 }
 
 function Experience() {
+    const sectionRef = useRef(null);
+    const [hasBeenVisible, setHasBeenVisible] = useState(false);
+
+    const isInView = useInView(sectionRef, {
+        triggerOnce: true,
+        amount: 0.8,
+    });
+
+    useEffect(() => {
+        if (isInView && !hasBeenVisible) {
+            setHasBeenVisible(true);
+        }
+    }, [isInView, hasBeenVisible]);
+
     return (
         <>
             <motion.h1
+                ref={sectionRef}
                 id="experience"
-                className={`${styles.sectionHeadText} flex justify-center items-center pt-36 pb-8 sm:pb-10 md:pb-12 xl:pb-16`}
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                className={`${styles.sectionHeadText} scroll-mt-24  flex justify-center items-center pt-36 pb-10 sm:pb-12 md:pb-14 xl:pb-20`}
+                initial="hidden"
+                animate={hasBeenVisible ? "visible" : "hidden"}
+                variants={{
+                    hidden: { opacity: 0, y: 100 },
+                    visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 0.5 },
+                    },
+                }}
             >
                 Experience
             </motion.h1>

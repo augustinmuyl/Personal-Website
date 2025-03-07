@@ -52,7 +52,7 @@ function Hero() {
                         transition: {
                             delay: 0.1,
                             delayChildren: 0.1,
-                            staggerChildren: 1.1,
+                            staggerChildren: 0.8,
                         },
                     },
                 }}
@@ -61,10 +61,11 @@ function Hero() {
                 <motion.div
                     className="flex text-lg sm:text-xl md:text-2xl xl:text-3xl"
                     variants={{
-                        hidden: {},
+                        hidden: { opacity: 0 },
                         visible: {
+                            opacity: 1,
                             transition: {
-                                staggerChildren: 0.1,
+                                staggerChildren: 0.07,
                             },
                         },
                     }}
@@ -73,7 +74,7 @@ function Hero() {
                         <motion.p
                             key={index}
                             variants={{
-                                hidden: { opacity: 0, y: 50 },
+                                hidden: { opacity: 0, y: 30 },
                                 visible: {
                                     opacity: 1,
                                     y: 0,
@@ -90,10 +91,11 @@ function Hero() {
                 <motion.div
                     className="font-bold text-3xl flex sm:text-4xl md:text-5xl xl:text-6xl"
                     variants={{
-                        hidden: {},
+                        hidden: { opacity: 0 },
                         visible: {
+                            opacity: 1,
                             transition: {
-                                staggerChildren: 0.1,
+                                staggerChildren: 0.07,
                             },
                         },
                     }}
@@ -102,7 +104,7 @@ function Hero() {
                         <motion.h1
                             key={index}
                             variants={{
-                                hidden: { opacity: 0, y: 50 },
+                                hidden: { opacity: 0, y: 70 },
                                 visible: {
                                     opacity: 1,
                                     y: 0,
@@ -119,11 +121,12 @@ function Hero() {
                 <motion.div
                     className="flex text-lg sm:text-xl md:text-2xl xl:text-3xl"
                     variants={{
-                        hidden: { opacity: 0, x: -100 },
+                        hidden: { opacity: 0 },
                         visible: {
                             opacity: 1,
-                            x: 0,
-                            transition: { staggerChildren: 0.1 },
+                            transition: {
+                                staggerChildren: 0.05,
+                            },
                         },
                     }}
                 >
@@ -152,7 +155,7 @@ function Hero() {
                         visible: {
                             opacity: 1,
                             y: 0,
-                            transition: { delay: 4.7, duration: 0.5 },
+                            transition: { delay: 3.2, duration: 0.5 },
                         },
                     }}
                 >
