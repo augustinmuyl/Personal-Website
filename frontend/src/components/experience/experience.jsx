@@ -70,7 +70,7 @@ function Experience() {
             <motion.h1
                 ref={sectionRef}
                 id="experience"
-                className={`${styles.sectionHeadText} scroll-mt-24  flex justify-center items-center pt-36 pb-10 sm:pb-12 md:pb-14 xl:pb-20`}
+                className={`${styles.sectionHeadText} scroll-mt-24 mt-16  flex justify-center items-center pt-36 pb-10 sm:pb-12 md:pb-14 xl:pb-20`}
                 initial="hidden"
                 animate={hasBeenVisible ? "visible" : "hidden"}
                 variants={{
