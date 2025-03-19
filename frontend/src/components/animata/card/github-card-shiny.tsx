@@ -37,7 +37,7 @@ export default function GithubCardShiny({ className }: { className?: string }) {
         <div
             ref={containerRef}
             className={cn(
-                "group relative max-w-full mx-2 min-[400px]:mx-16 sm:mx-12 md:mx-20 lg:mx-44 xl:mx-72 overflow-hidden rounded-3xl border text-zinc-200 shadow-lg",
+                "group relative w-1/2 max-w-full overflow-hidden rounded-3xl border text-zinc-200 shadow-lg",
                 className
             )}
         >
@@ -50,18 +50,18 @@ export default function GithubCardShiny({ className }: { className?: string }) {
                 }}
             />
 
-            <div className={`${styles.sectionBox}`}>
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
+            <div className={styles.sectionBox}>
+                <div className="flex justify-center gap-12">
                     <Image
                         src={pfp_1}
                         alt="PFP"
-                        className="rounded-full size-24 sm:size-36 md:size-48 lg:size-56 xl:size-64"
+                        className="rounded-full size-64"
                     />
-                    <div className="text-xs/5 sm:text-sm/6 md:text-base/7 xl:text-lg/7 tracking-wider text-white flex flex-col gap-4">
+                    <div className="text-lg/9 flex flex-col gap-4">
                         <p>
                             I'm a Mathematics and Computer Science student at
                             Boston University with a background in full-stack
-                            development, especially using React (Next.js),
+                            development, especially using React (Next.JS),
                             Tailwind CSS, Flask, MongoDB, and PostgreSQL.
                         </p>
                         <p>
