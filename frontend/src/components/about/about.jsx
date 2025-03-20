@@ -51,6 +51,7 @@ function About() {
 
             {/* PFP + Paragraph */}
             <motion.div
+                className="flex w-full justify-center items-center"
                 variants={{
                     hidden: { opacity: 0, x: -100 },
                     visible: {
