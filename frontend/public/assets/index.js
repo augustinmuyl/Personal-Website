@@ -8,6 +8,7 @@ import pfp_1 from "./pfp_1.jpeg";
 import pfp_2 from "./pfp_2.jpeg";
 import outreachoutlet from "./outreachoutlet.png";
 import outreachoutlet_screenshot from "./outreachoutlet_screenshot.png";
+import cma_cgm_logo from "./CMA_CGM_logo.png";
 
 export {
     iperuranium,
@@ -20,4 +21,5 @@ export {
     pfp_2,
     outreachoutlet,
     outreachoutlet_screenshot,
+    cma_cgm_logo,
 };

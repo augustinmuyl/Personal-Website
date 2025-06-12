@@ -6,35 +6,34 @@ import {
     bostonhacks_2,
     bualpha,
     bufc,
+    cma_cgm_logo,
 } from "../../public/assets";
 
 const experiences = [
     {
+        title: "Data Science Intern",
+        company: "CMA CGM",
+        date: "May 2025 - Aug 2025",
+        icon: <Image src={cma_cgm_logo} alt="Iperuranium" />,
+        description: ["Group Security & Intelligence team"]
+    },
+    {
         title: "Software Engineer",
         company: "Iperuranium",
-        date: "February 2025 - Present",
+        date: "Feb 2025 - Present",
         icon: <Image src={iperuranium_2} alt="Iperuranium" />,
         description: [
-            "Engineering a scalable, full‐stack web application from the ground up using Next.js, Tailwind CSS, Go, and MongoDB; enhancing operational efficiency and user experience.",
-            "Collaborating in a cross‐functional team of 8 to transform Figma prototypes into robust, production-ready code, ensuring seamless integration between design and development.",
+            "Led frontend development with TypeScript, Next.js, and Tailwind CSS for core user-facing pages, aligning UI to Figma designs and ensuring a mobile-first responsive interface",
+            "Implemented interactive UI animations with Motion (Framer Motion) across critical signup flows, enhancing UX engagement through clear animated feedback",
         ],
     },
     {
         title: "Software Developer",
         company: "BostonHacks",
-        date: "February 2025 - Present",
+        date: "Feb 2025 - Present",
         icon: <Image src={bostonhacks_2} alt="BostonHacks" />,
         description: [
-            "Developing a web application using Next.js and Tailwind CSS as an onboarding project.",
-        ],
-    },
-    {
-        title: "Quantitative Analyst",
-        company: "BUAlpha",
-        date: "February 2025 - Present",
-        icon: <Image src={bualpha} alt="BUAplha/BUFC" />,
-        description: [
-            "Participating in weekly workshops surrounding machine learning, programming, math, statistics, and finance.",
+            "Archived legacy hackathon web applications (2017-Present) as static HTML and collaborated with design to launch a unified, on-brand portal, enabling students and sponsors to explore them in a centralized, zero-maintenance archive.",
         ],
     },
 ];
